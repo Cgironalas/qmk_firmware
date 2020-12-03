@@ -32,7 +32,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MATRIX_COLS 3
 #define MATRIX_ROWS 3
 
-// ROWS: Top to bottom, COLS: Left to right
+// COLS: Left to right, ROWS: Top to bottom
 
 // For 3x3
 #define MATRIX_COL_PINS { B1, B3, F6 }
