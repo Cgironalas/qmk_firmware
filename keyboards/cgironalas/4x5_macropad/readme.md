@@ -16,7 +16,7 @@ Make example for this keyboard (after setting up your build environment):
 
     make cgironalas/4x5_macropad:default
 
-Bootmagic is enabled.  Press the key at (0,0) (top left corner) while plugging the macropad in to jump to bootloader. This is `Numlock` in the default keymap.
+Bootmagic is enabled.  Press the key at (0,0) (top left corner) while plugging in the macropad to jump to bootloader. This is `Numlock` in the default keymap.
 
 * Keyboard Maintainer: [Cgironalas](https://github.com/Cgironalas)
 
