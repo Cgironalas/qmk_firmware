@@ -23,20 +23,20 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define PRODUCT_ID      0x6060
 #define DEVICE_VER      0x0001
 #define MANUFACTURER    Cgironalas
-#define PRODUCT         3x3-Macropad
-#define DESCRIPTION     QMK keyboard firmware for a 3x3 macropad
+#define PRODUCT         4x5-Macropad
+#define DESCRIPTION     QMK keyboard firmware for a 4x5 macropad
 
 #define TAPPING_TERM 400
 
 /* key matrix size */
-#define MATRIX_COLS 3
-#define MATRIX_ROWS 3
+#define MATRIX_COLS 4
+#define MATRIX_ROWS 5
 
-// ROWS: Top to bottom, COLS: Left to right
+// COLS: Left to right, ROWS: Top to bottom
 
-// For 3x3
-#define MATRIX_COL_PINS { B1, B3, F6 }
-#define MATRIX_ROW_PINS { D4, C6, D7 }
+// For 4x5
+#define MATRIX_COL_PINS { D1, D0, C6, D4 }
+#define MATRIX_ROW_PINS { F4, B1, F7, F6, F5 }
 
 
 #define UNUSED_PINS
