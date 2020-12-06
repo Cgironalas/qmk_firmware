@@ -1,4 +1,8 @@
-# 3x3-Macropad-Rev2
+# 3x3-Macropad-Rev2 (EOL)
+
+## Top corners don't work!
+
+Due to a mistake in the PCB design the top corner switches always have continuity so they can't be programmed. Will be revised in version 3.
 
 ### Arduino Pro Micro Pinout
 | columns     | 0   | 1   | 2   |
@@ -16,7 +20,7 @@ Make example for this keyboard (after setting up your build environment):
 
     make cgironalas/3x3_macropad_rev2:default
 
-Bootmagic is enabled.  Press the key at (0,0) (top left corner) while plugging in the macropad to jump to bootloader. This is `Home` in the default keymap. This can still be done with 5 pin rotary encoders if using one on the top left corner.
+Bootmagic is enabled.  Press the key at (0,1) (top middle) while plugging in the macropad to jump to bootloader. This is `Print Screen` in the default keymap.
 
 * Keyboard Maintainer: [Cgironalas](https://github.com/Cgironalas)
 

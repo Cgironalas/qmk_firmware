@@ -1,93 +1,79 @@
 #include QMK_KEYBOARD_H
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   /* TKL functionality layer.
-   * |---------|-------|-------|
-   * | Home/DF | Del   | PgUp  |
-   * |---------|-------|-------|
-   * | End     | Up    | PgDn  |
-   * |---------|-------|-------|
-   * | Left    | Down  | Right |
-   * |---------|-------|-------|
+   * |------|---------|-------|
+   * |      | Pscr/DF |       |
+   * |------|---------|-------|
+   * | Home | Up      | End   |
+   * |------|---------|-------|
+   * | Left | Down    | Right |
+   * |------|---------|-------|
    */
 
-  [0] = LAYOUT_3x3_macropad(
-    LT(5, KC_HOME), KC_DEL,  KC_PGUP,
-    KC_END,         KC_UP,   KC_PGDN,
-    KC_LEFT,        KC_DOWN, KC_RGHT
+  [0] = LAYOUT_3x3_macropad_rev2(
+    KC_NO,   LT(3, KC_PSCR), KC_NO,
+    KC_HOME, KC_UP,          KC_END,
+    KC_LEFT, KC_DOWN,        KC_RGHT
   ),
   /* Media/Gaming layer.
-   * |---------|------|------|
-   * | Pscr/DF | dGUI | eGUI |
-   * |---------|------|------|
-   * | Prev    | Play | Next |
-   * |---------|------|------|
-   * | Mute    | Vol- | Vol+ |
-   * |---------|------|------|
+   * |------|---------|------|
+   * |      | Pscr/DF |      |
+   * |------|---------|------|
+   * | Prev | Play    | Next |
+   * |------|---------|------|
+   * | Mute | Vol-    | Vol+ |
+   * |------|---------|------|
    */
 
-  [1] = LAYOUT_3x3_macropad(
-    LT(5, KC_PSCR), GUI_OFF, GUI_ON,
-    KC_MPRV,        KC_MPLY, KC_MNXT,
-    KC_MUTE,        KC_VOLD, KC_VOLU
+  [1] = LAYOUT_3x3_macropad_rev2(
+    KC_NO,   LT(3, KC_PSCR), KC_NO,
+    KC_MPRV, KC_MPLY,        KC_MNXT,
+    KC_MUTE, KC_VOLD,        KC_VOLU
   ),
   /* Weird Fs for easy keybinds.
-   * |--------|-----|-----|
-   * | F19/DF | F20 | F21 |
-   * |--------|-----|-----|
-   * | F16    | F17 | F18 |
-   * |--------|-----|-----|
-   * | F13    | F14 | F15 |
-   * |--------|-----|-----|
+   * |------|---------|------|
+   * |      | F19/DF  |      |
+   * |------|---------|------|
+   * | F16  | F17     | F18  |
+   * |------|---------|------|
+   * | F13  | F14     | F15  |
+   * |------|---------|------|
    */
 
-  [2] = LAYOUT_3x3_macropad(
-    LT(5, KC_F19),  KC_F20,  KC_F21,
-    KC_F16,         KC_F17,  KC_F18,
-    KC_F13,         KC_F14,  KC_F15
-  ),
-  /* Tap based numpad 1/2.
-   * |------|----|----|
-   * | 7/DF | 8  | 9  |
-   * |------|----|----|
-   * | 4    | 5  | 6  |
-   * |------|----|----|
-   * | 1/FN | 2  | 3  |
-   * |------|----|----|
-   */
-
-  [3] = LAYOUT_3x3_macropad(
-    LT(5, KC_7), KC_8,    KC_9,
-    KC_4,        KC_5,    KC_6,
-    LT(4, KC_1), KC_2,    KC_3
-  ),
-  /* Numpad 2/2.
-   * |-----|-----|------|
-   * |  /  |  *  | Bspc |
-   * |-----|-----|------|
-   * |  -  |  +  | En   |
-   * |-----|-----|------|
-   * |     |  0  |   .  |
-   * |-----|-----|------|
-   */
-
-  [4] = LAYOUT_3x3_macropad(
-    KC_PSLS, KC_PAST, KC_BSPC,
-    KC_PMNS, KC_PPLS, KC_ENT,
-    KC_NO,   KC_0,    KC_DOT
+  [2] = LAYOUT_3x3_macropad_rev2(
+    KC_NO,   LT(3, KC_F19),  KC_NO,
+    KC_F16,  KC_F17,         KC_F18,
+    KC_F13,  KC_F14,         KC_F15
   ),
   /* Layer for switching default layer.
    * |-------|-------|-------|
-   * |       |       | Reset |
+   * |       |       |       |
    * |-------|-------|-------|
-   * | DF(3) |       |       |
+   * | PgUp  | Reset | PgDn  |
    * |-------|-------|-------|
    * | DF(0) | DF(1) | DF(2) |
    * |-------|-------|-------|
    */
 
-  [5] = LAYOUT_3x3_macropad(
-    KC_NO, KC_NO, RESET,
-    DF(3), KC_NO, KC_NO,
-    DF(0), DF(1), DF(2)
+  [3] = LAYOUT_3x3_macropad_rev2(
+    KC_NO,   KC_NO, KC_NO,
+    KC_PGUP, RESET, KC_PGDN,
+    DF(0),   DF(1), DF(2)
   ),
 };
+
+void encoder_update_user(uint8_t index, bool clockwise) {
+    if (index == 0) {           /* First encoder */
+        if (clockwise) {
+            tap_code(KC_VOLD);
+        } else {
+            tap_code(KC_VOLU);
+        }
+    } else if (index == 1) {    /* Second encoder */
+        if (clockwise) {
+            tap_code(KC_MS_WH_UP);
+        } else {
+            tap_code(KC_MS_WH_DOWN);
+        }
+    }
+}

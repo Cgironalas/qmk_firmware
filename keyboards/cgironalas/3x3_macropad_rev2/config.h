@@ -37,6 +37,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MATRIX_COL_PINS { F4, B2, D3 }
 #define MATRIX_ROW_PINS { F5, B3, B1 }
 
+// Custom bootmagic lite switch cause issue
+#define BOOTMAGIC_LITE_ROW 0
+#define BOOTMAGIC_LITE_COLUMN 1
+
+// Encoder pins
+#define ENCODERS_PAD_A { F6, D4 }
+#define ENCODERS_PAD_B { F7, C6 }
 
 #define UNUSED_PINS
 
