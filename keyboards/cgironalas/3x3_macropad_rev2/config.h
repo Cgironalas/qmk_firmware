@@ -45,6 +45,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define ENCODERS_PAD_A { F6, D4 }
 #define ENCODERS_PAD_B { F7, C6 }
 
+// Backlight
+#define BACKLIGHT_PIN B6
+#define BACKLIGHT_LEVELS 3
+#define BACKLIGHT_ON_STATE 1
+#define BACKLIGHT_LIMIT_VAL 255
+
 #define UNUSED_PINS
 
 /* COL2ROW or ROW2COL */
