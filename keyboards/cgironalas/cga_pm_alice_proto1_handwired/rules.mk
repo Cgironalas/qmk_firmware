@@ -15,7 +15,7 @@ BOOTLOADER = caterina
 #   comment out to disable the options.
 #
 BOOTMAGIC_ENABLE = lite	# Key at 0,0 makes the keyboard go into bootloader
-MOUSEKEY_ENABLE = no	# Mouse keys
+MOUSEKEY_ENABLE = yes	# Mouse keys
 EXTRAKEY_ENABLE = yes	# Audio control and System control
 CONSOLE_ENABLE = yes	# Console for debug
 COMMAND_ENABLE = yes    # Commands for debug and configuration
