@@ -41,8 +41,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MATRIX_COL_PINS { D7, D4, D0, D2, D3, F4, F5, F6 }
 
 // Encoder pins
-/* #define ENCODERS_PAD_A { D5, F1 } */
-/* #define ENCODERS_PAD_B { C7, F0 } */
+#define ENCODERS_PAD_A { D5, F1 }
+#define ENCODERS_PAD_B { C7, F0 }
 
 /* Enable SOFT_SERIAL_PIN to allow usage of macropads for extended usability. */
 /* #define SOFT_SERIAL_PIN D1 */
