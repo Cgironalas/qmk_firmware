@@ -5,8 +5,8 @@
     "width": 8,
     "height": 9,
     "layouts": {
-        "LAYOUT": {
-            "split_backspace_split_shift": [
+        "LAYOUT_cga_pm_alice_proto1": {
+            "layout": [
                 {"x": 0, "y": 0},
                 {"x": 1, "y": 0},
                 {"x": 2, "y": 0},

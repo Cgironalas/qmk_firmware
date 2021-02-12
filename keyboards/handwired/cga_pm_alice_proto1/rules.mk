@@ -10,8 +10,10 @@ BOOTLOADER = caterina
 BOOTMAGIC_ENABLE = lite     # Key at 0,0 makes the keyboard go into bootloader
 MOUSEKEY_ENABLE = yes       # Mouse keys
 EXTRAKEY_ENABLE = yes       # Audio control and System control
-ENCODER_ENABLE = yes 		# enable use of encoders
-SPLIT_KEYBOARD = yes		# Allow for "split functionality" to enable use of macropads
+COMMAND_ENABLE = yes        # Commands for debug and configuration
+CONSOLE_ENABLE = yes        # Console for debug
+ENCODER_ENABLE = no 		# enable use of encoders
+SPLIT_KEYBOARD = no		# Allow for "split functionality" to enable use of macropads
 
 # if this doesn't work, see here: https://github.com/tmk/tmk_keyboard/wiki/FAQ#nkro-doesnt-work
 NKRO_ENABLE = yes           # USB Nkey Rollover
@@ -21,6 +23,6 @@ SLEEP_LED_ENABLE = no       # Breathing sleep LED during USB suspend
 BACKLIGHT_ENABLE = no       # Enable keyboard backlight functionality
 BLUETOOTH_ENABLE = no       # Enable Bluetooth
 RGBLIGHT_ENABLE = no        # Enable keyboard RGB underglow
-COMMAND_ENABLE = no         # Commands for debug and configuration
-CONSOLE_ENABLE = no         # Console for debug
 AUDIO_ENABLE = no           # Audio output
+
+LAYOUTS = cga_pm_alice_proto1

@@ -42,7 +42,7 @@
  * k70: KC_DEL,   k71: KC_Z,    k72: KC_C,    k73: KC_B,    k74: KC_N,    k75: KC_COMM, k76: KC_SLSH, k77: MO(3),
  * k80: KC_SPC,   k81: KC_NO,   k82: KC_NO,   k83: KC_NO,   k84: KC_NO,   k85: KC_RALT, k86: KC_NO,   k87: KC_LCTL
  */
-#define LAYOUT( \
+#define LAYOUT_cga_pm_alice_proto1( \
        k01, k11, k02, k12, k03, k13, k04, k14, k05, k15, k16, k27, k17, k06, k07, \
        k21, k31, k22, k32, k23, k33, k24, k34, k25, k35, k26, k36, k37,   k47,    \
   k00, k41, k51, k42, k52, k43, k53, k44, k54, k45, k55, k46, k56,        k57,    \

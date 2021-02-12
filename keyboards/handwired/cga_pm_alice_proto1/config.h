@@ -20,12 +20,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "config_common.h"
 
 /* USB Device descriptor parameter */
-#define VENDOR_ID    0xCAAA
-#define PRODUCT_ID   0x1000
-#define DEVICE_VER   0x0001
-#define MANUFACTURER Cgironalas
-#define PRODUCT      CGA-PM-Alice-Proto1
-#define DESCRIPTION  Pro Micro powered Alice prototype
+#define VENDOR_ID     0xCAAA
+#define PRODUCT_ID    0x1000
+#define DEVICE_VER    0x0001
+#define MANUFACTURER  Cgironalas
+#define PRODUCT       CGA-PM-Alice-Proto1
+#define DESCRIPTION   Pro Micro powered Alice prototype
 
 #define TAPPING_TERM 300
 
@@ -41,17 +41,17 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MATRIX_COL_PINS { D7, D4, D0, D2, D3, F4, F5, F6 }
 
 // Encoder pins
-#define ENCODERS_PAD_A { D5, F1 }
-#define ENCODERS_PAD_B { C7, F0 }
+/* #define ENCODERS_PAD_A { D5, F1 } */
+/* #define ENCODERS_PAD_B { C7, F0 } */
 
 /* Enable SOFT_SERIAL_PIN to allow usage of macropads for extended usability. */
-#define SOFT_SERIAL_PIN D1
+/* #define SOFT_SERIAL_PIN D1 */
 
 // Backlight
-#define BACKLIGHT_PIN B7
-#define BACKLIGHT_LEVELS 3
-#define BACKLIGHT_ON_STATE 1
-#define BACKLIGHT_LIMIT_VAL 255
+/* #define BACKLIGHT_PIN B7 */
+/* #define BACKLIGHT_LEVELS 3 */
+/* #define BACKLIGHT_ON_STATE 1 */
+/* #define BACKLIGHT_LIMIT_VAL 255 */
 
 #define UNUSED_PINS
 
@@ -71,9 +71,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define LOCKING_RESYNC_ENABLE
 
 /* disable action features */
-#define NO_ACTION_LAYER
-#define NO_ACTION_TAPPING
-#define NO_ACTION_ONESHOT
+/* #define NO_ACTION_LAYER */
+/* #define NO_ACTION_TAPPING */
+/* #define NO_ACTION_ONESHOT */
 
 /* disable these deprecated features by default */
 #define NO_ACTION_MACRO
