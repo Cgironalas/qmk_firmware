@@ -9,8 +9,8 @@ BOOTLOADER = caterina
 #
 BACKLIGHT_ENABLE = yes      # Enable keyboard backlight functionality
 BOOTMAGIC_ENABLE = lite     # Key at 0,0 makes the keyboard go into bootloader
-MOUSEKEY_ENABLE = yes       # Mouse keys
 EXTRAKEY_ENABLE = yes       # Audio control and System control
+MOUSEKEY_ENABLE = yes       # Mouse keys
 COMMAND_ENABLE = yes        # Commands for debug and configuration
 CONSOLE_ENABLE = yes        # Console for debug
 ENCODER_ENABLE = yes 		# enable use of encoders
