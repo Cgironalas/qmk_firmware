@@ -48,10 +48,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /* #define SOFT_SERIAL_PIN D1 */
 
 // Backlight
-/* #define BACKLIGHT_PIN B7 */
-/* #define BACKLIGHT_LEVELS 3 */
-/* #define BACKLIGHT_ON_STATE 1 */
-/* #define BACKLIGHT_LIMIT_VAL 255 */
+#define BACKLIGHT_PIN B7
+#define BACKLIGHT_LEVELS 3
+#define BACKLIGHT_ON_STATE 1
+#define BACKLIGHT_LIMIT_VAL 255
 
 #define UNUSED_PINS
 
