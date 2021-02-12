@@ -19,12 +19,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #include "config_common.h"
 /* USB Device descriptor parameter */
-#define VENDOR_ID       0xFEED
-#define PRODUCT_ID      0x6060
+#define VENDOR_ID       0xCAAA
+#define PRODUCT_ID      0x1000
 #define DEVICE_VER      0x0001
 #define MANUFACTURER    Cgironalas
 #define PRODUCT         CGA-PM-Alice-Proto1-Handwired
-#define DESCRIPTION     QMK keyboard firmware for a handwired pro micro alice like
+#define DESCRIPTION     QMK keyboard firmware for a handwired pro micro powered alice like.
 
 #define TAPPING_TERM 300
 
@@ -34,10 +34,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 // ROWS: Top to bottom, COLS: Left to right
 
-// For 3x3
+// Using 8x9 matrix
 #define MATRIX_ROW_PINS { C6, E6, B4, B5, F7, B1, B3, B2, B6 }
 #define MATRIX_COL_PINS { D7, D4, D0, D2, D3, F4, F5, F6 }
-
 
 #define UNUSED_PINS
 
