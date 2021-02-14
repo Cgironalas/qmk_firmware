@@ -39,16 +39,17 @@ Make example for this keyboard as the left hand side of the split (after setting
 
 Flashing example for this keyboard:
 
-    make handwired/cga_pm_alice_proto1/split:split:avrdude-split-left
+    make handwired/cga_pm_alice_proto1/split:split:avrdude
 
 
 **If you choose to manage both the main keyboard and the macropads firmware through this you'll need to do a configuration like the split_all:**
+For this you'll need to flash the main keyboard with the command
+    make handwired/cga_pm_alice_proto1/split:split_3x3_rev2:avrdude-split-left
+
+The macropad will use:
     make handwired/cga_pm_alice_proto1/split_all:split_3x3_rev2
 
-    Then flash the main keyboard with this:
-    make handwired/cga_pm_alice_proto1/split_all:split_3x3_rev2:avrdude-split-left
-
-    And the macropad like this:
+Then flash the macropad like this:
     make handwired/cga_pm_alice_proto1/split_all:split_3x3_rev2:avrdude-split-right
 
 See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_tools) and the [make instructions](https://docs.qmk.fm/#/getting_started_make_guide) for more information. Brand new to QMK? Start with our [Complete Newbs Guide](https://docs.qmk.fm/#/newbs).
