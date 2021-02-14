@@ -28,7 +28,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define TAPPING_TERM 300
 
 /* Key matrix size */
-#define MATRIX_ROWS 15
+#define MATRIX_ROWS 18
 #define MATRIX_COLS 8
 
 /* Keyboard Matrix Assignments
