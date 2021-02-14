@@ -25,10 +25,10 @@ enum layer_names {
 };
 
 // Defines the keycodes used by our macros in process_record_user
-/* enum custom_keycodes { */
-/*   MACRO0 = SAFE_RANGE, */
-/*   MACRO1 */
-/* }; */
+enum custom_keycodes {
+  MACRO0 = SAFE_RANGE,
+  MACRO1
+};
 
 // Layers
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -79,24 +79,24 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 };
 
 // Macros
-/* bool process_record_user(uint16_t keycode, keyrecord_t *record) { */
-/*     switch (keycode) { */
-/*         case MACRO0: */
-/*             if (record->event.pressed) { */
-/*                 // when keycode MACRO0 is pressed */
-/*                 SEND_STRING("Macro 0"); */
-/*             } else { */
-/*                 // when keycode MACRO0 is released */
-/*             } */
-/*             break; */
-/*         case MACRO1: */
-/*             if (record->event.pressed) { */
-/*                 // when keycode MACRO1 is pressed */
-/*                 SEND_STRING("Macro 1"); */
-/*             } else { */
-/*                 // when keycode MACRO1 is released */
-/*             } */
-/*             break; */
-/*     } */
-/*     return true; */
-/* } */
+bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+    switch (keycode) {
+        case MACRO0:
+            if (record->event.pressed) {
+                // when keycode MACRO0 is pressed
+                SEND_STRING("Macro 0");
+            } else {
+                // when keycode MACRO0 is released
+            }
+            break;
+        case MACRO1:
+            if (record->event.pressed) {
+                // when keycode MACRO1 is pressed
+                SEND_STRING("Macro 1");
+            } else {
+                // when keycode MACRO1 is released
+            }
+            break;
+    }
+    return true;
+}
