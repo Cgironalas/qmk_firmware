@@ -24,5 +24,3 @@ SLEEP_LED_ENABLE = no       # Breathing sleep LED during USB suspend
 BLUETOOTH_ENABLE = no       # Enable Bluetooth
 RGBLIGHT_ENABLE = no        # Enable keyboard RGB underglow
 AUDIO_ENABLE = no           # Audio output
-
-LAYOUTS = cga_pm_alice_proto1
