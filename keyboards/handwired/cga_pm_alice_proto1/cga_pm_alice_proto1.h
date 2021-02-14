@@ -24,6 +24,9 @@
 #ifdef KEYBOARD_handwired_cga_pm_alice_proto1_split
   #include "split.h"
 #endif
+#ifdef KEYBOARD_handwired_cga_pm_alice_proto1_split_all
+  #include "split_all.h"
+#endif
 
 /* This is a shortcut to help you visually see your layout.
  *
