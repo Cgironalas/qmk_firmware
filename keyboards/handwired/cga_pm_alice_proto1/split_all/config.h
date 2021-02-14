@@ -52,8 +52,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define SOFT_SERIAL_PIN D1
 
 // Backlight
-#define BACKLIGHT_PIN B7 // Un-comment this line to set the backlight pin for the main keyboard
-/* #define BACKLIGHT_PIN B6 // Un-comment this line to set the backlight pin for the main keyboard */
+/* #define BACKLIGHT_PIN B7 // Un-comment this line to set the backlight pin for the main keyboard */
+#define BACKLIGHT_PIN B6 // Un-comment this line to set the backlight pin for the main keyboard
 #define BACKLIGHT_LEVELS 3
 #define BACKLIGHT_ON_STATE 1
 #define BACKLIGHT_LIMIT_VAL 255
@@ -64,9 +64,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DIODE_DIRECTION COL2ROW
 
 /* Bootmagic Lite key configuration */
-#define BOOTMAGIC_LITE_ROW 0
-#define BOOTMAGIC_LITE_COLUMN 0
-/* #define BOOTMAGIC_LITE_COLUMN 1 // For the 3x3 macropad rev2 use this */
+// For the main keyboard
+// #define BOOTMAGIC_LITE_ROW 0
+// #define BOOTMAGIC_LITE_COLUMN 0
+
+// For the 3x3 macropad rev2 use this 0
+#define BOOTMAGIC_LITE_ROW 6
+#define BOOTMAGIC_LITE_COLUMN 5
 
 /* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
 #define DEBOUNCE 5
