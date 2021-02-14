@@ -8,12 +8,12 @@ This is a project for a handwired prototype that I built for an Arduino Pro Micr
 * Hardware Supported: This keyboard was disegned to be wired with a Pro Micro or equivalent controler.
 
 ### Pro Micro Pinout
-| columns     | 0   | 1   | 2   | 3   | 4   | 5   | 6   | 7   |
+| columns     |  0  |  1  |  2  |  3  |  4  |  5  |  6  |  7  |
 | ----------- | --- | --- | --- | --- | --- | --- | --- | --- |
 | arduino pin |  6  |  4  |  3  | RX1 | TX0 | A3  | A2  | A1  |
 | qmk pin     | D7  | D4  | D0  | D2  | D3  | F4  | F5  | F6  |
 
-| rows        | 0   | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   |
+| rows        |  0  |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |
 | ----------- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | arduino pin |  5  |  7  |  8  |  9  | A0  | 15  | 14  | 16  | 10  |
 | qmk pin     | C6  | E6  | B4  | B5  | F7  | B1  | B3  | B2  | B6  |
