@@ -18,6 +18,13 @@
 
 #include "quantum.h"
 
+#ifdef KEYBOARD_handwired_cga_pm_alice_proto1_solo
+  #include "solo.h"
+#endif
+#ifdef KEYBOARD_handwired_cga_pm_alice_proto1_split
+  #include "split.h"
+#endif
+
 /* This is a shortcut to help you visually see your layout.
  *
  * The first section contains all of the arguments representing the physical
