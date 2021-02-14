@@ -25,10 +25,30 @@ Bootmagic is enabled.  Press the key at (0,0) while plugging the keyboard in to 
 
 Make example for this keyboard (after setting up your build environment):
 
-    make handwired/cga_pm_alice_proto1:default
+    make handwired/cga_pm_alice_proto1/solo:default
 
 Flashing example for this keyboard:
 
-    make handwired/cga_pm_alice_proto1:default:flash
+    make handwired/cga_pm_alice_proto1/solo:default:avrdude
+
+#### For split keyboard functionality
+
+Make example for this keyboard as the left hand side of the split (after setting up your build environment):
+
+    make handwired/cga_pm_alice_proto1/split:split
+
+Flashing example for this keyboard:
+
+    make handwired/cga_pm_alice_proto1/split:split:avrdude-split-left
+
+
+**If you choose to manage both the main keyboard and the macropads firmware through this you'll need to do a configuration like the split_all:**
+    make handwired/cga_pm_alice_proto1/split_all:split_3x3_rev2
+
+    Then flash the main keyboard with this:
+    make handwired/cga_pm_alice_proto1/split_all:split_3x3_rev2:avrdude-split-left
+
+    And the macropad like this:
+    make handwired/cga_pm_alice_proto1/split_all:split_3x3_rev2:avrdude-split-right
 
 See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_tools) and the [make instructions](https://docs.qmk.fm/#/getting_started_make_guide) for more information. Brand new to QMK? Start with our [Complete Newbs Guide](https://docs.qmk.fm/#/newbs).
