@@ -76,7 +76,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_RS] = LAYOUT_split(
                                                                                                                                                        KC_NO,        KC_TRNS,     KC_NO,   KC_NO,
              KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   RESET,      DF(_QWERTY),  DF(_DVORAK), KC_NO,   KC_NO,
-             KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,            KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,      DF(_FN1),     DF(_FN2),    KC_NO,   KC_NO,
+             KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,            KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,      DF(_FN1),     DF(_FN2),    RESET,   KC_NO,
     KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,            KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,        KC_NO,          KC_NO,        KC_NO,       KC_NO,   KC_NO,
     KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   DF(_QWERTY),  DF(_DVORAK), KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,      KC_NO,        KC_NO,       KC_NO,   KC_NO,
     KC_NO,   KC_NO,   KC_NO,   KC_NO,        KC_NO,       KC_NO,                     KC_NO,            KC_NO,                          KC_NO,          KC_NO,        KC_NO,       KC_NO,   KC_NO
