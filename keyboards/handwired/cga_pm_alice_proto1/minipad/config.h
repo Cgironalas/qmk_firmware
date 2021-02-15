@@ -22,7 +22,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define PRODUCT_ID    0x1000
 #define DEVICE_VER    0x0001
 #define MANUFACTURER  Cgironalas
-#define PRODUCT       CGA-PM-Alice-Proto1-Split
+#define PRODUCT       CGA-PM-Alice-Proto1-Split-Minipad
 #define DESCRIPTION   Pro Micro powered Alice prototype
 
 #define TAPPING_TERM 300
@@ -37,8 +37,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 #define MATRIX_ROW_PINS { C6, E6, B4, B5, F7, B1, B3, B2, B6 }
 #define MATRIX_COL_PINS { D7, D4, D0, D2, D3, F4, F5, F6 }
-#define MATRIX_ROW_PINS_RIGHT { F5, B3, B1, B4, D7, E6, NO_PIN, NO_PIN, NO_PIN }
-#define MATRIX_COL_PINS_RIGHT { F4, B2, D3, B5, NO_PIN, NO_PIN, NO_PIN, NO_PIN }
+#define MATRIX_ROW_PINS_RIGHT { F5, B3, B1, NO_PIN, NO_PIN, NO_PIN, NO_PIN, NO_PIN, NO_PIN }
+#define MATRIX_COL_PINS_RIGHT { F4, B2, D3, NO_PIN, NO_PIN, NO_PIN, NO_PIN, NO_PIN }
 
 // Encoder pins
 #define ENCODERS_PAD_A { D5, F1 }
@@ -47,12 +47,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define ENCODERS_PAD_B_RIGHT { F7, C6 }
 
 /* Enable SOFT_SERIAL_PIN to allow usage of macropads for extended usability. */
-#define SPLIT_USB_DETECT
-
 #define SOFT_SERIAL_PIN D1
 
 // Backlight
-/* #define BACKLIGHT_PIN B7 // Un-comment this line to set the backlight pin for the main keyboard */
 #define BACKLIGHT_PIN B6 // Un-comment this line to set the backlight pin for the main keyboard
 #define BACKLIGHT_LEVELS 3
 #define BACKLIGHT_ON_STATE 1
@@ -64,13 +61,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DIODE_DIRECTION COL2ROW
 
 /* Bootmagic Lite key configuration */
-// For the main keyboard
-// #define BOOTMAGIC_LITE_ROW 0
-// #define BOOTMAGIC_LITE_COLUMN 0
-
-// For the 3x3 macropad rev2 use this 0
-#define BOOTMAGIC_LITE_ROW 6
-#define BOOTMAGIC_LITE_COLUMN 5
+#define BOOTMAGIC_LITE_ROW 0
+#define BOOTMAGIC_LITE_COLUMN 1
 
 /* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
 #define DEBOUNCE 5
