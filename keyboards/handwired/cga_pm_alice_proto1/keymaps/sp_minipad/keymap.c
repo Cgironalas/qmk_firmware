@@ -116,9 +116,9 @@ void encoder_update_user(uint8_t index, bool clockwise){
             if (clockwise) {} else {}
         } else if(index == 2){  // First encoder in minipad
             if (clockwise) {
-                tap_code(KC_VOLU);
-            } else {
                 tap_code(KC_VOLD);
+            } else {
+                tap_code(KC_VOLU);
             }
         } else if(index == 3){  // Second encoder in minipad
             if (clockwise) {
@@ -135,9 +135,9 @@ void encoder_update_user(uint8_t index, bool clockwise){
             if (clockwise) {} else {}
         } else if(index == 2){  // First encoder in minipad
             if (clockwise) {
-                tap_code(KC_RGHT);
-            } else {
                 tap_code(KC_LEFT);
+            } else {
+                tap_code(KC_RGHT);
             }
         } else if(index == 3){  // Second encoder in minipad
             if (clockwise) {
