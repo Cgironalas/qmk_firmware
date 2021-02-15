@@ -105,3 +105,65 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     }
     return true;
 }
+
+// Encoders
+void encoder_update_user(uint8_t index, bool clockwise){
+    // Encoder functionality for main layers
+    if(IS_LAYER_ON(_DVORAK) || IS_LAYER_ON(_QWERTY)){
+        if (index == 0){        // First encoder in main keyboard
+            if (clockwise) {} else {}
+        } else if(index == 1){  // Second encoder in main keyboard
+            if (clockwise) {} else {}
+        } else if(index == 2){  // First encoder in minipad
+            if (clockwise) {
+                tap_code(KC_VOLU);
+            } else {
+                tap_code(KC_VOLD);
+            }
+        } else if(index == 3){  // Second encoder in minipad
+            if (clockwise) {
+                tap_code(KC_MS_WH_DOWN);
+            } else {
+                tap_code(KC_MS_WH_UP);
+            }
+        }
+    // Encoder functionality for FN layers
+    } else if (IS_LAYER_ON(_FN1) || IS_LAYER_ON(_FN2)) {
+        if (index == 0){        // First encoder in main keyboard
+            if (clockwise) {} else {}
+        } else if(index == 1){  // Second encoder in main keyboard
+            if (clockwise) {} else {}
+        } else if(index == 2){  // First encoder in minipad
+            if (clockwise) {
+                tap_code(KC_RGHT);
+            } else {
+                tap_code(KC_LEFT);
+            }
+        } else if(index == 3){  // Second encoder in minipad
+            if (clockwise) {
+                tap_code(KC_DOWN);
+            } else {
+                tap_code(KC_UP);
+            }
+        }
+    // Encoder functionality for DFs/Reset layer
+    } else if(IS_LAYER_ON(_RS)) {
+        if (index == 0){        // First encoder in main keyboard
+            if (clockwise) {} else {}
+        } else if(index == 1){  // Second encoder in main keyboard
+            if (clockwise) {} else {}
+        } else if(index == 2){  // First encoder in minipad
+            if (clockwise) {
+                tap_code(KC_NO);
+            } else {
+                tap_code(KC_NO);
+            }
+        } else if(index == 3){  // Second encoder in minipad
+            if (clockwise) {
+                tap_code(KC_NO);
+            } else {
+                tap_code(KC_NO);
+            }
+        }
+    }
+}
