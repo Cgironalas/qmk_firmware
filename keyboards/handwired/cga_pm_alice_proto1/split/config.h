@@ -43,8 +43,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define ENCODERS_PAD_B { C7, F0 }
 
 /* Enable SOFT_SERIAL_PIN to allow usage of macropads for extended usability. */
-#define SPLIT_USB_DETECT
-
 #define SOFT_SERIAL_PIN D1
 
 // Backlight
