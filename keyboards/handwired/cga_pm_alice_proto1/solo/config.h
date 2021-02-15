@@ -22,7 +22,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define PRODUCT_ID    0x1000
 #define DEVICE_VER    0x0001
 #define MANUFACTURER  Cgironalas
-#define PRODUCT       CGA-PM-Alice-Proto1-Solo
+#define PRODUCT       CGA-PM-Alice-Proto1
 #define DESCRIPTION   Pro Micro powered Alice prototype
 
 #define TAPPING_TERM 300
