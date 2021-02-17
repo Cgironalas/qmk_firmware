@@ -12,9 +12,13 @@
 | qmk pin     | D4  | C6  | D7  |
 
 
-Make example for this keyboard (after setting up your build environment):
+Make example to build the firmware for this keyboard (after setting up your build environment):
 
     make cgironalas/3x3_macropad:default
+
+Make example to flash the firmware:
+
+    make cgironalas/3x3_macropad:default:avrdude
 
 Bootmagic is enabled.  Press the key at (0,0) (top left corner) while plugging in the macropad to jump to bootloader. This is `Home` in the default keymap.
 
