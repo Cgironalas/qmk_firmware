@@ -10,8 +10,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * |------|---------|-------|
    */
 
-  [0] = LAYOUT_3x3_macropad_rev2(
-    KC_NO,   LT(3, KC_PSCR), KC_NO,
+  [0] = LAYOUT_minipad(
+    KC_NO,   LT(4, KC_PSCR), KC_NO,
     KC_HOME, KC_UP,          KC_END,
     KC_LEFT, KC_DOWN,        KC_RGHT
   ),
@@ -25,8 +25,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * |------|---------|------|
    */
 
-  [1] = LAYOUT_3x3_macropad_rev2(
-    KC_NO,   LT(3, KC_PSCR), KC_NO,
+  [1] = LAYOUT_minipad(
+    KC_NO,   LT(4, KC_PSCR), KC_NO,
     KC_MPRV, KC_MPLY,        KC_MNXT,
     KC_MUTE, KC_VOLD,        KC_VOLU
   ),
@@ -40,25 +40,40 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * |------|---------|------|
    */
 
-  [2] = LAYOUT_3x3_macropad_rev2(
-    KC_NO,   LT(3, KC_F19),  KC_NO,
+  [2] = LAYOUT_minipad(
+    KC_NO,   LT(4, KC_F19),  KC_NO,
     KC_F16,  KC_F17,         KC_F18,
     KC_F13,  KC_F14,         KC_F15
   ),
-  /* Layer for backling / switching default layer.
-   * |---------|---------|-------|
-   * |         |         |       |
-   * |---------|---------|-------|
-   * | BL_TOGG | BL_STEP | RESET |
-   * |---------|---------|-------|
-   * | DF(0)   | DF(1)   | DF(2) |
-   * |---------|---------|-------|
+  /* Backlight.
+   * |--------|---------|--------|
+   * |        | Brt/DF  |        |
+   * |--------|---------|--------|
+   * | BL_ON  | BL_TOGG | BL_INC |
+   * |--------|---------|--------|
+   * | BL_OFF | BL_STEP | BL_DEC |
+   * |--------|---------|--------|
    */
 
-  [3] = LAYOUT_3x3_macropad_rev2(
-    KC_NO,   KC_NO,   KC_NO,
-    BL_TOGG, BL_STEP, RESET,
-    DF(0),   DF(1),   DF(2)
+  [3] = LAYOUT_minipad(
+    KC_NO,   LT(4, BL_TOGG), KC_NO,
+    BL_ON,   BL_BRTG,        BL_INC,
+    BL_OFF,  BL_STEP,        BL_DEC
+  ),
+  /* Layer for switching default layer.
+   * |-------|-------|-------|
+   * |       |       |       |
+   * |-------|-------|-------|
+   * | DF(3) |       | RESET |
+   * |-------|-------|-------|
+   * | DF(0) | DF(1) | DF(2) |
+   * |-------|-------|-------|
+   */
+
+  [4] = LAYOUT_minipad(
+    KC_NO,   KC_NO, KC_NO,
+    DF(3),   KC_NO, RESET,
+    DF(0),   DF(1), DF(2)
   ),
 };
 

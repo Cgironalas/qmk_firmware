@@ -1,4 +1,4 @@
-# 3x3-Macropad-Rev2 (EOL)
+# CGA Minipad Rev 2 (EOL)
 
 ## Top corners don't work!
 
@@ -18,7 +18,7 @@ Due to a mistake in the PCB design the top corner switches always have continuit
 
 Make example for this keyboard (after setting up your build environment):
 
-    make cgironalas/3x3_macropad_rev2:default
+    make cgironalas/cga_minipad_rev2:default
 
 Bootmagic is enabled.  Press the key at (0,1) (top middle) while plugging in the macropad to jump to bootloader. This is `Print Screen` in the default keymap.
 

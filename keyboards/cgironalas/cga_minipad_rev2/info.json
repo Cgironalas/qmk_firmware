@@ -1,11 +1,11 @@
 {
-    "keyboard_name": "3x3-Macropad-Rev2",
+    "keyboard_name": "CGA-Minipad-Rev2",
     "url": "",
-    "maintainer": "qmk",
+    "maintainer": "Cgironalas",
     "width": 3,
     "height": 3,
     "layouts": {
-        "LAYOUT_3x3_macropad_rev2": {
+        "LAYOUT_minipad": {
             "layout": [
                 {"x": 0, "y": 0},
                 {"x": 1, "y": 0},

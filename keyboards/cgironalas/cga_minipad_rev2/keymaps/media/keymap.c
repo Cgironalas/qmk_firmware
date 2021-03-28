@@ -2,17 +2,17 @@
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   /*
    * |------|------|------|
-   * | Home | Del  | PgUp |
+   * |      | Pscr |      |
    * |------|------|------|
-   * | End  | Up   | PgDn |
+   * | Prev | Play | Next |
    * |------|------|------|
-   * | Left | Down | Rght |
+   * | Mute | Vol- | Vol+ |
    * |------|------|------|
    */
 
-  [0] = LAYOUT_3x3_macropad(
-    KC_HOME, KC_DEL,  KC_PGUP,
-    KC_END,  KC_UP,   KC_PGDN,
-    KC_LEFT, KC_DOWN, KC_RGHT
+  [0] = LAYOUT_minipad(
+    KC_NO,   KC_PSCR, KC_NO,
+    KC_MPRV, KC_MPLY, KC_MNXT,
+    KC_MUTE, KC_VOLD, KC_VOLU
   ),
 };

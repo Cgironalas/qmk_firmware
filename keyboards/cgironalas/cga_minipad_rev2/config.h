@@ -19,14 +19,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #include "config_common.h"
 /* USB Device descriptor parameter */
-#define VENDOR_ID       0xFEED
-#define PRODUCT_ID      0x6060
-#define DEVICE_VER      0x0001
+#define VENDOR_ID       0xCF1A
+#define PRODUCT_ID      0x0033
+#define DEVICE_VER      0x0002
 #define MANUFACTURER    Cgironalas
-#define PRODUCT         3x3-Macropad-Rev2
+#define PRODUCT         CGA-Minipad-Rev2
 #define DESCRIPTION     QMK keyboard firmware for a 3x3 macropad
 
-#define TAPPING_TERM 400
+#define TAPPING_TERM 300
 
 /* key matrix size */
 #define MATRIX_COLS 3

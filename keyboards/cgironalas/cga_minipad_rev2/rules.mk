@@ -28,4 +28,4 @@ UNICODE_ENABLE = no 	# Unicode
 BLUETOOTH_ENABLE = no 	# Enable Bluetooth with the Adafruit EZ-Key HID
 TAP_DANCE_ENABLE = no
 
-LAYOUTS = 3x3_macropad_rev2
+LAYOUTS = minipad
