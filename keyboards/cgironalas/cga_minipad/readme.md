@@ -1,26 +1,26 @@
-# 3x3-Macropad
+# CGA-Minipad
 
 ### Arduino Pro Micro Pinout
-| columns     | 0   | 1   | 2   |
+| columns     |  0  |  1  |  2  |
 | ----------- | --- | --- | --- |
-| arduino pin | 16  | 15  | A1  |
-| qmk pin     | B1  | B3  | F6  |
+| Arduino pin | 16  | 15  | A1  |
+| QMK pin     | B1  | B3  | F6  |
 
-| rows        | 0   | 1   | 2   |
+| rows        |  0  |  1  |  2  |
 | ----------- | --- | --- | --- |
-| arduino pin | 4   | 5   | 6   |
-| qmk pin     | D4  | C6  | D7  |
+| Arduino pin | 4   | 5   | 6   |
+| QMK pin     | D4  | C6  | D7  |
 
 
 Make example to build the firmware for this keyboard (after setting up your build environment):
 
-    make cgironalas/3x3_macropad:default
+    make cgironalas/cga_minipad:default
 
 Make example to flash the firmware:
 
-    make cgironalas/3x3_macropad:default:avrdude
+    make cgironalas/cga_minipad:default:avrdude
 
-Bootmagic is enabled.  Press the key at (0,0) (top left corner) while plugging in the macropad to jump to bootloader. This is `Home` in the default keymap.
+Bootmagic is enabled. Press the key at (0,0) (top left corner) while plugging in the macropad to jump to bootloader. This is `Home` in the default keymap.
 
 * Keyboard Maintainer: [Cgironalas](https://github.com/Cgironalas)
 
