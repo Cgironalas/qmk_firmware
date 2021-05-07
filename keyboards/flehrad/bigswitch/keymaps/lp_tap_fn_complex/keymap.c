@@ -6,6 +6,7 @@ enum tap_dances {
 };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
+  // Set layer to run tap function
   [0] = LAYOUT(
     TD(TAP_FN)
   ),
@@ -30,15 +31,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 void dance_example(qk_tap_dance_state_t *state, void *user_data) {
     switch(state->count) {
+        // When tapped once input the string "Normal String"
         case 1:
             SEND_STRING("Normal String");
             break;
+        // When tapped twice select all text and copy
         case 2:
             SEND_STRING(SS_LCTL("ac"));
             break;
+        // When tapped three times do an ALT+TAB
         case 3:
             tap_code16(LCTL(KC_TAB));
             break;
+        // In any other scenario input an "a"
         default:
             tap_code(KC_A);
         reset_tap_dance(state);
