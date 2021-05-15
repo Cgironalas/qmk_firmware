@@ -18,14 +18,14 @@
 
 #include "quantum.h"
 
-#ifdef KEYBOARD_handwired_cgironalas_cga_pm_alice_solo
-  #include "solo.h"
+#ifdef KEYBOARD_handwired_cgironalas_cga_pm_alice_solo_left
+  #include "solo_left.h"
 #endif
 #ifdef KEYBOARD_handwired_cgironalas_cga_pm_alice_split
-  #include "split.h"
+  #include "solo_right.h"
 #endif
 #ifdef KEYBOARD_handwired_cgironalas_cga_pm_alice_minipad
-  #include "minipad.h"
+  #include "split.h"
 #endif
 
 /* This is a shortcut to help you visually see your layout.
