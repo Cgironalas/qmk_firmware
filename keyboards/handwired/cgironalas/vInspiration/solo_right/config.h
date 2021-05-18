@@ -23,7 +23,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DEVICE_VER    0x0002
 #define MANUFACTURER  Cgironalas
 #define PRODUCT       CGA-vInspiration-Right
-#define DESCRIPTION   Pro Micro powered split modular 60% - 65% (left side)
+#define DESCRIPTION   Pro Micro powered split modular 60% (right side)
 
 #define TAPPING_TERM 300
 
