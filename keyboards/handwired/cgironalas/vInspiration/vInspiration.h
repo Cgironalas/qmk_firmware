@@ -18,13 +18,13 @@
 
 #include "quantum.h"
 
-#ifdef KEYBOARD_handwired_cgironalas_cga_pm_alice_solo_left
+#ifdef KEYBOARD_handwired_cgironalas_vInspiration_solo_left
   #include "solo_left.h"
 #endif
-#ifdef KEYBOARD_handwired_cgironalas_cga_pm_alice_split
+#ifdef KEYBOARD_handwired_cgironalas_vInspiration_solo_right
   #include "solo_right.h"
 #endif
-#ifdef KEYBOARD_handwired_cgironalas_cga_pm_alice_minipad
+#ifdef KEYBOARD_handwired_cgironalas_vInspiration_split
   #include "split.h"
 #endif
 
