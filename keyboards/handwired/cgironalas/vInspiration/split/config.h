@@ -36,24 +36,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  * Rows: top to bottom.
  */
 #define MATRIX_ROW_PINS { D1, D0, D4, C6, D7 }
-#define MATRIX_COL_PINS { E6, B4, F4, F5, F6, B2, B6, B1 }
-#define MATRIX_ROW_PINS_RIGHT { D1, D0, D4, C6, D7 }
-#define MATRIX_COL_PINS_RIGHT { E6, B4, B6, B1, F7, F6, F5, F4 }
-
-// Encoder pins
-#define ENCODERS_PAD_A { B7, F1 }
-#define ENCODERS_PAD_B { D5, F0 }
-#define ENCODERS_PAD_A_RIGHT { B7, F1 }
-#define ENCODERS_PAD_B_RIGHT { D5, F0 }
+#define MATRIX_COL_PINS { E6, B4, F4, F5, F6, B1, F7, B3 }
+#define MATRIX_ROW_PINS_RIGHT { F4, F5, F6, F7, B1 }
+#define MATRIX_COL_PINS_RIGHT { B3, B2, B5, B4, E6, D7, C6, D4 }
 
 /* Enable SOFT_SERIAL_PIN to allow usage of macropads for extended usability. */
 #define SOFT_SERIAL_PIN D3
 
-// Backlight
-/* #define BACKLIGHT_PIN B7 */
-/* #define BACKLIGHT_LEVELS 3 */
-/* #define BACKLIGHT_ON_STATE 1 */
-/* #define BACKLIGHT_LIMIT_VAL 255 */
+// FOR RGB USE D2
 
 #define UNUSED_PINS
 
