@@ -35,8 +35,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  * Cols: left to right.
  * Rows: top to bottom.
  */
-#define MATRIX_ROW_PINS { D1, D0, D4, C6, D7 }
-#define MATRIX_COL_PINS { E6, B4, B6, B1, F7, F6, F5, F4 }
+#define MATRIX_ROW_PINS { F4, F5, F6, F7, B1 }
+#define MATRIX_COL_PINS { B3, B2, B5, B4, E6, D7, C6, D4 }
 
 // Encoder pins
 #define ENCODERS_PAD_A { B7, F1 }

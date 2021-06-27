@@ -36,11 +36,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  * Rows: top to bottom.
  */
 #define MATRIX_ROW_PINS { D1, D0, D4, C6, D7 }
-#define MATRIX_COL_PINS { E6, B4, F4, F5, F6, B2, B6, B1 }
+#define MATRIX_COL_PINS { E6, B4, F4, F5, F6, B1, F7, B3 }
 
 // Encoder pins
-#define ENCODERS_PAD_A { B7, F1 }
-#define ENCODERS_PAD_B { D5, F0 }
+/* #define ENCODERS_PAD_A { B7, F1 } */
+/* #define ENCODERS_PAD_B { D5, F0 } */
 
 // Backlight
 /* #define BACKLIGHT_PIN B7 */
