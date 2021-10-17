@@ -1,7 +1,7 @@
 {
-    "keyboard_name": "4x5-Macropad",
+    "keyboard_name": "CGA-4x5-Macropad",
     "url": "",
-    "maintainer": "qmk",
+    "maintainer": "cgironalas",
     "width": 4,
     "height": 5,
     "layouts": {
