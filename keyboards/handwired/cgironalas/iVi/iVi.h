@@ -27,6 +27,9 @@
 #ifdef KEYBOARD_handwired_cgironalas_iVi_split
   #include "split.h"
 #endif
+#ifdef KEYBOARD_handwired_cgironalas_iVi_split_old
+  #include "split_old.h"
+#endif
 
 /* This is a shortcut to help you visually see your layout.
  *
