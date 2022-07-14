@@ -35,11 +35,11 @@
  *
  * Right KLE
  *
- * [{x:1.25},"^\n6",{x:0.25},"&\n7",{x:0.25},"*\n8",{x:0.5},"(\n9",{x:0.25},")\n0",{x:0.25},"_\n-",{x:2},"+\n=",{x:1.5,w:2},"|\n\\"],
- * [{x:1.25},"Y",{x:0.25},"U",{x:0.25},"I",{x:0.5},"O",{x:0.25},"P",{x:0.25},"{\n[",{x:2},"}\n]",{x:1.5,w:1.5},"Backspace"],
- * [{x:1.25},"H",{x:0.25},"J",{x:0.25},"K",{x:0.5},"L",{x:0.25},":\n;",{x:0.25},"\"\n'",{x:2,w:2.25},"Enter"],
- * [{x:1.25},"N",{x:0.25},"M",{x:0.25},"<\n,",{x:0.5},">\n.",{x:0.25},"?\n/",{x:0.25,w:2.75},"Shift"],
- * [{x:0.25,a:7,w:2},"",{x:0.25,a:4},"Shift",{x:0.25,w:1.25},"Alt",{x:0.25},"Left",{x:0.25},"Down",{x:0.25},"Up",{x:2},"Right"]
+ * [{x:1.25},"^\n6",{x:0.25},"&\n7",{x:0.25},"*\n8",{x:0.5},"(\n9",{x:0.25},")\n0",{x:0.25},"_\n-",{x:0.25},"+\n=",{x:0.25,w:2},"|\n\\"],
+ * [{x:1.25},"Y",{x:0.25},"U",{x:0.25},"I",{x:0.5},"O",{x:0.25},"P",{x:0.25},"{\n[",{x:0.25},"}\n]",{x:0.25,w:1.5},"Backspace"],
+ * [{x:1.25},"H",{x:0.25},"J",{x:0.25},"K",{x:0.5},"L",{x:0.25},":\n;",{x:0.25},"\"\n'",{x:1.5,w:2.25},"Enter"],
+ * [{x:1.25},"N",{x:0.25},"M",{x:0.25},"<\n,",{x:0.5},">\n.",{x:0.25},"?\n/",{x:2.75,w:2.75},"Shift"],
+ * [{x:0.25,a:7,w:2},"",{x:0.25,a:4},"Shift",{x:0.25,w:1.25},"Alt",{x:0.25},"Left",{x:0.25},"Down",{x:2.75},"Up",{x:2},"Right"]
  *
  * The second converts the arguments into a two-dimensional array which
  * represents the switch matrix.
@@ -52,29 +52,29 @@
  *
  * k50: KC_6,     k51: KC_7,    k52: KC_8,    k53: KC_9,    k54: KC_0,    k55: KC_MINS, k56: KC_EQL,  k57: KC_BSLS, k58: KC_NO,
  * k60: KC_Y,     k61: KC_U,    k62: KC_I,    k63: KC_O,    k64: KC_P,    k65: KC_LBRC, k66: KC_RBRC, k67: KC_BSPC, k68: KC_NO,
- * k70: KC_H,     k71: KC_J,    k72: KC_K,    k73: KC_L,    k74: KC_SCLN, k75: KC_QUOT, k76: KC_ENT,  k77: KC_NO,   k78: KC_NO,
- * k80: KC_N,     k81: KC_M,    k82: KC_COMM, k83: KC_DOT,  k84: KC_SLSH, k85: KC_RSFT, k86: KC_NO,   k87: KC_NO,   k88: KC_NO,
- * k90: KC_SPC,   k91: KC_RSFT, k92: KC_RALT, k93: KC_LEFT, k94: KC_DOWN, k95: KC_UP,   k96: KC_RGHT, k97: KC_NO,   k98: KC_NO
+ * k70: KC_H,     k71: KC_J,    k72: KC_K,    k73: KC_L,    k74: KC_SCLN, k75: KC_QUOT, k76: KC_NO,   k77: KC_ENT,  k78: KC_NO,
+ * k80: KC_N,     k81: KC_M,    k82: KC_COMM, k83: KC_DOT,  k84: KC_SLSH, k85: KC_NO,   k86: KC_NO,   k87: KC_RSFT, k88: KC_NO,
+ * k90: KC_SPC,   k91: KC_RSFT, k92: KC_RALT, k93: KC_LEFT, k94: KC_DOWN, k95: KC_NO,   k96: KC_NO,   k97: KC_UP,   k98: KC_RGHT,
  */
 
 /*left                                          ||  right */
 #define LAYOUT_split( \
-  L00, L01, L02, L03, L04, L05, L06, L07, L08,      R00, R01, R02, R03, R04, R05, R06, R07,      \
-  L10, L11,      L13, L14, L15, L16, L17, L18,      R10, R11, R12, R13, R14, R15, R16, R17,      \
-       L21,      L23, L24, L25, L26, L27, L28,      R20, R21, R22, R23, R24, R25, R26,           \
-       L31,      L33, L34, L35, L36, L37, L38,      R30, R31, R32, R33, R34, R35,                \
-       L41,      L43, L44,      L46, L47, L48,      R40, R41, R42, R43, R44, R45, R46            \
+  L00, L01, L02, L03, L04, L05, L06, L07, L08,      R00, R01, R02, R03, R04, R05, R06, R07,     \
+  L10, L11,      L13, L14, L15, L16, L17, L18,      R10, R11, R12, R13, R14, R15, R16, R17,     \
+       L21,      L23, L24, L25, L26, L27, L28,      R20, R21, R22, R23, R24, R25,      R27,     \
+       L31,      L33, L34, L35, L36, L37, L38,      R30, R31, R32, R33, R34,           R37,     \
+       L41,      L43, L44,      L46, L47, L48,      R40, R41, R42, R43, R44,           R47, R48 \
 ) \
 { \
-  { L00,   L01,   L02,   L03,   L04,   L05,   L06,   L07,   L08 }, \
-  { L10,   L11,   KC_NO, L13,   L14,   L15,   L16,   L17,   L18 }, \
-  { KC_NO, L21,   KC_NO, L23,   L24,   L25,   L26,   L27,   L28 }, \
-  { KC_NO, L31,   KC_NO, L33,   L34,   L35,   L36,   L37,   L38 }, \
-  { KC_NO, L41,   KC_NO, L43,   L44,   KC_NO, L46,   L47,   L48 }, \
+  { L00,   L01,   L02,   L03,   L04,   L05,   L06,   L07,   L08   }, \
+  { L10,   L11,   KC_NO, L13,   L14,   L15,   L16,   L17,   L18   }, \
+  { KC_NO, L21,   KC_NO, L23,   L24,   L25,   L26,   L27,   L28   }, \
+  { KC_NO, L31,   KC_NO, L33,   L34,   L35,   L36,   L37,   L38   }, \
+  { KC_NO, L41,   KC_NO, L43,   L44,   KC_NO, L46,   L47,   L48   }, \
                                                               \
   { R00,   R01,   R02,   R03,   R04,   R05,   R06,   R07,   KC_NO }, \
   { R10,   R11,   R12,   R13,   R14,   R15,   R16,   R17,   KC_NO }, \
-  { R20,   R21,   R22,   R23,   R24,   R25,   R26,   KC_NO, KC_NO }, \
-  { R30,   R31,   R32,   R33,   R34,   R35,   KC_NO, KC_NO, KC_NO }, \
-  { R40,   R41,   R42,   R43,   R44,   R45,   R46,   KC_NO, KC_NO }  \
+  { R20,   R21,   R22,   R23,   R24,   R25,   KC_NO, R27,   KC_NO }, \
+  { R30,   R31,   R32,   R33,   R34,   KC_NO, KC_NO, R37,   KC_NO }, \
+  { R40,   R41,   R42,   R43,   R44,   KC_NO, KC_NO, R47,   R48   }  \
 }

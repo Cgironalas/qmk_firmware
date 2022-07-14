@@ -37,8 +37,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 #define MATRIX_ROW_PINS { C6, D7, E6, B2, B5 } /* B4 is dead in current controler */
 #define MATRIX_COL_PINS { D4, D0, D1, F4, F5, F6, F7, B1, B3 }
-#define MATRIX_ROW_PINS_RIGHT { F4, F5, F6, F7, B1 } /* ToDo */
-#define MATRIX_COL_PINS_RIGHT { B3, B2, B5, B4, E6, D7, C6, D4 } /* ToDo */
+#define MATRIX_ROW_PINS_RIGHT { D0, D4, C6, D7, E6 }
+#define MATRIX_COL_PINS_RIGHT { F4, F5, F6, F7, B1, B3, B2, B5, B4 }
 
 /* Enable SOFT_SERIAL_PIN to allow usage of macropads for extended usability. */
 #define SOFT_SERIAL_PIN D3
