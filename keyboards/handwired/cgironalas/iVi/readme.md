@@ -48,10 +48,10 @@ If you are planning to use any other CGA board along this keyboard you can build
 Flashing example for this keyboard:
 
     For Pro Micro controler:
-    make handwired/cgironalas/iVi/split:split:avrdude-split-left
+    make handwired/cgironalas/iVi/split:via_split:avrdude-split-left
 
     For Elite-C controler:
-    make handwired/cgironalas/iVi/split:split:dfu-split-left
+    make handwired/cgironalas/iVi/split:via_split:dfu-split-left
 
 If you are using a CGA Minipad as the extra board then the firmware for it will be:
     make handwired/cgironalas/iVi/split:sp_minipad

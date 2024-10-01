@@ -43,14 +43,18 @@ These firmwares are for running the keyboard as a "split" allowing it to connect
 
 If you are planning to use any other CGA board along this keyboard you can build the firmware with the `split` version and the default `split` keymap until you get the extra board. If you already have or know the extra board that you'll use then build the firmware with the `split` version and the respective board's keymap (either `sp_minipad` or `sp_numpad`).
 
-    make handwired/cgironalas/cga_pm_alice/split:split
-
 Flashing example for this keyboard:
 
-    make handwired/cgironalas/cga_pm_alice/split:split:avrdude-split-left
+    make handwired/cgironalas/vInspiration/split:split:avrdude-split-left
+    make handwired/cgironalas/vInspiration/split:split:avrdude-split-right
+
+If using an elite-c or DFU controler:
+
+    make handwired/cgironalas/vInspiration/split:split:dfu-split-left
+    make handwired/cgironalas/vInspiration/split:split:dfu-split-right
 
 If you are using a CGA Minipad as the extra board then the firmware for it will be:
-    make handwired/cgironalas/cga_pm_alice/split:sp_minipad
+    make handwired/cgironalas/vInspiration/split:via_split
 
 Then flash the extra board like this:
     make handwired/cgironalas/cga_pm_alice/split:sp_minipad:avrdude-split-right
